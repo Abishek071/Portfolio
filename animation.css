@@ -1,0 +1,116 @@
+.animation{
+    height: 80vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+.shape{
+    background-color: var(--yellow--);
+    position: absolute;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+.one{
+    bottom: -150px;
+    left: 20px;
+    animation: up 4s infinite;
+}
+
+.two{
+    transform: scale(0.5);
+    bottom: -150px;
+    left: 200px;
+    animation: up 4s infinite;
+    animation-delay: 2s;
+}
+
+.three{
+    bottom: -150px;
+    left: 420px;
+    animation: up 4s infinite;
+}
+
+.four{
+    transform: scale(0.5);
+    bottom: -150px;
+    left: 620px;
+    animation: up 4s infinite;
+    animation-delay: 2s;
+}
+
+.five{
+    bottom: -150px;
+    left: 820px;
+    animation: up 4s infinite;
+}
+
+
+@keyframes up{
+    0%{
+        bottom: -150px;
+    }
+    
+    50%{
+        bottom: 150px;
+        transform: rotate(180deg);
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+    
+    100%{
+        bottom: -150px;
+    }
+}
+*/
+.content{
+    margin-top: 150px;
+    padding: 20px;
+    color: var(--yellow--);
+    width: 100%;
+    font-family: var(--font--);
+    font-size: 3rem;
+    z-index: 2;
+}
+
+.content p{
+    opacity: 0.5;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.content h1:hover{
+    color: white;
+    filter: drop-shadow(5px 5px 10px var(--yellow--));
+    transform: translateY(-5px);
+}
+
+.image img{
+    position: absolute;
+    left: 29%;
+    bottom: -10%;
+    z-index: 1;
+    filter: drop-shadow(5px 10px 15px black);
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1.5s;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0px);
+    filter: blur(0px);
+}
+

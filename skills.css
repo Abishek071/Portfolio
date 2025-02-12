@@ -1,0 +1,123 @@
+.cons{
+    transform: translateX(-100%);
+    opacity: 0.3;
+    filter: blur(5.2px);
+    transition: all 0.8s;
+}
+
+.conso{
+    transform: translateX(0%);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.conso:nth-child(1){
+    transition-delay: 0.2s;
+}
+.conso:nth-child(2){
+    transition-delay: 0.5s;
+}
+
+.conso:nth-child(3){
+    transition-delay: 1s;
+}
+
+.contain:hover .contain::before{
+    height: 100%;
+}
+
+.skills{
+    margin: 50px 0;
+    background-color: var(--light--);
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    font-family: var(--font--);
+    color: white;
+}
+
+.text{
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--brown--);
+}
+
+.container{
+    box-sizing: border-box;
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.contain{
+    height: 400px;
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.shadow{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0%;
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.8), transparent);
+    transition: all 0.5s;
+}
+
+.texxt{
+    position: absolute;
+    bottom: -370px;
+    padding: 10px;
+    opacity: 0;
+    z-index: 2;
+    transition: bottom 0.4s ease-out;
+    transition-delay: 0.2s;
+}
+
+.texxt h2{
+    color: var(--yellow--);
+}
+
+.contain:nth-child(1){
+    background-image: url('images/html.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.contain:nth-child(2){
+    background-image: url('images/css.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.contain:nth-child(3){
+    background-image: url('images/javascript.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.contain:hover .shadow{
+    height: 100%;
+    top: 0;
+}
+
+.contain:hover .texxt{
+    bottom: 0px;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1211px){
+    .container{
+        width: 100%;
+    }
+}
