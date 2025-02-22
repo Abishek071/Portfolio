@@ -1,177 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" type="image/x-icon" href="images/Shape 3.png">
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="card_sec.css">
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="random.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abishek's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/Shape 3.png" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="card_sec.css" />
+    <link rel="stylesheet" href="skills.css" />
+    <link rel="stylesheet" href="random.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
+  </head>
+  <body>
     <nav>
-        <div class="logo-container">
-            <img src="images/Shape 3.png" alt="logo" width="100%">
-        </div>
+      <div class="logo-container">
+        <img src="images/Shape 3.png" alt="logo" width="100%" />
+      </div>
 
-        <ul class="list">
-            <li><a href="#" onclick="home()" class="active" id="home_but">Home</a></li>
-            <li><a href="#" onclick="about()" id="abt_but">About me</a></li>
-            <li><a href="#skill" onclick="skill()" id="skill_but">My Skills</a></li>
-            <li><a href="#photos" onclick="photo()" id="photo_but">Random Photos</a></li>
-            <li><a href="#contact" onclick="contact()" id="contact_but">Contact me</a></li>
-            <div class="box"></div>
-        </ul>
-        <div class="menu" onclick="myFunction()">
-            <div></div>
-            <div></div>
-            <div></div>
+      <ul class="list">
+        <li>
+          <a href="#" onclick="home()" class="active" id="home_but">Home</a>
+        </li>
+        <li><a href="#" onclick="about()" id="abt_but">About me</a></li>
+        <li><a href="#skill" onclick="skill()" id="skill_but">My Skills</a></li>
+        <li>
+          <a href="#photos" onclick="photo()" id="photo_but">Random Photos</a>
+        </li>
+        <li>
+          <a href="#contact" onclick="contact()" id="contact_but">Contact me</a>
+        </li>
+        <div class="box"></div>
+      </ul>
+      <div class="menu" onclick="myFunction()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="overlay" id="myOverlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="#about">About me</a>
+          <a href="#">My Skills</a>
+          <a href="#">Random Photos</a>
+          <a href="#">Contact me</a>
         </div>
-        <div class="overlay" id="myOverlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="#">Home</a>
-                <a href="#about">About me</a>
-                <a href="#">My Skills</a>
-                <a href="#">Random Photos</a>
-                <a href="#">Contact me</a>
-            </div>
-        </div>
+      </div>
     </nav>
     <section class="animation">
-        <div class="content hidden">
-            <h1 align="center">&lt;Abishek&gt;</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <div class="content hidden">
-            <h1 align="center">&lt;/Shrestha&gt;</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        </div>
-        <div class="image">
-            <img src="images/ichigo.png" alt="ichigo">
-        </div>
-        <div class="shape one"></div>
-        <div class="shape two"></div>
-        <div class="shape three"></div>
-        <div class="shape four"></div>
-        <div class="shape five"></div>
+      <div class="content hidden">
+        <h1>&lt;Abishek&gt;</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+      <div class="image">
+        <img src="images/ichigo.png" alt="ichigo" width="100%" />
+      </div>
+      <div class="content hidden">
+        <h1>&lt;/Shrestha&gt;</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+      <!-- <div class="shape one"></div>
+      <div class="shape two"></div>
+      <div class="shape three"></div>
+      <div class="shape four"></div>
+      <div class="shape five"></div> -->
     </section>
-    
+
     <!--About section-->
     <section class="card" id="about">
-        <div class="items para">
-            <div class="heading hidden">Wanna Know About Me?</div>
-            <div class="paragraph hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat quae officiis beatae voluptatem suscipit accusantium perferendis alias aperiam officia unde, necessitatibus est quas animi. Atque, quibusdam laboriosam! Nulla, dolore.
-                Sunt, atque. Deserunt veritatis reiciendis sunt eius eaque quibusdam! Culpa dolor quidem excepturi omnis, incidunt aut autem porro ex. In incidunt mollitia ea soluta, numquam maiores quas hic ratione nostrum.
-            </div>
+      <div class="items para">
+        <div class="heading hidden">Wanna Know About Me?</div>
+        <div class="paragraph hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat
+          quae officiis beatae voluptatem suscipit accusantium perferendis alias
+          aperiam officia unde, necessitatibus est quas animi. Atque, quibusdam
+          laboriosam! Nulla, dolore. Sunt, atque. Deserunt veritatis reiciendis
+          sunt eius eaque quibusdam! Culpa dolor quidem excepturi omnis,
+          incidunt aut autem porro ex. In incidunt mollitia ea soluta, numquam
+          maiores quas hic ratione nostrum.
         </div>
-        <div class="items para">
-            <img src="images/jb.jpg" alt="jb" width="100%" height="100%">
-        </div>
+      </div>
+      <div class="items para">
+        <img src="images/jb.jpg" alt="jb" width="100%" height="100%" />
+      </div>
     </section>
 
     <section class="card_sec">
-        <div class="items para">
-            <img src="images/jb.jpg" alt="jb" width="100%" height="100%">
+      <div class="items para">
+        <img src="images/jb.jpg" alt="jb" width="100%" height="100%" />
+      </div>
+      <div class="items para">
+        <div class="heading hidden">Wanna Know About Me?</div>
+        <div class="paragraph hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat
+          quae officiis beatae voluptatem suscipit accusantium perferendis alias
+          aperiam officia unde, necessitatibus est quas animi. Atque, quibusdam
+          laboriosam! Nulla, dolore. Sunt, atque. Deserunt veritatis reiciendis
+          sunt eius eaque quibusdam! Culpa dolor quidem excepturi omnis,
+          incidunt aut autem porro ex. In incidunt mollitia ea soluta, numquam
+          maiores quas hic ratione nostrum.
         </div>
-        <div class="items para">
-            <div class="heading hidden">Wanna Know About Me?</div>
-            <div class="paragraph hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat quae officiis beatae voluptatem suscipit accusantium perferendis alias aperiam officia unde, necessitatibus est quas animi. Atque, quibusdam laboriosam! Nulla, dolore.
-                Sunt, atque. Deserunt veritatis reiciendis sunt eius eaque quibusdam! Culpa dolor quidem excepturi omnis, incidunt aut autem porro ex. In incidunt mollitia ea soluta, numquam maiores quas hic ratione nostrum.
-            </div>
-        </div>
+      </div>
     </section>
 
-    <section class="card" style="margin: 0;">
-        <div class="items para">
-            <div class="heading hidden">Wanna Know About Me?</div>
-            <div class="paragraph hidden">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat quae officiis beatae voluptatem suscipit accusantium perferendis alias aperiam officia unde, necessitatibus est quas animi. Atque, quibusdam laboriosam! Nulla, dolore.
-                Sunt, atque. Deserunt veritatis reiciendis sunt eius eaque quibusdam! Culpa dolor quidem excepturi omnis, incidunt aut autem porro ex. In incidunt mollitia ea soluta, numquam maiores quas hic ratione nostrum.
-            </div>
+    <section class="card" style="margin: 0">
+      <div class="items para">
+        <div class="heading hidden">Wanna Know About Me?</div>
+        <div class="paragraph hidden">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat
+          quae officiis beatae voluptatem suscipit accusantium perferendis alias
+          aperiam officia unde, necessitatibus est quas animi. Atque, quibusdam
+          laboriosam! Nulla, dolore. Sunt, atque. Deserunt veritatis reiciendis
+          sunt eius eaque quibusdam! Culpa dolor quidem excepturi omnis,
+          incidunt aut autem porro ex. In incidunt mollitia ea soluta, numquam
+          maiores quas hic ratione nostrum.
         </div>
-        <div class="items para">
-            <img src="images/jb.jpg" alt="jb" width="100%" height="100%">
-        </div>
+      </div>
+      <div class="items para">
+        <img src="images/jb.jpg" alt="jb" width="100%" height="100%" />
+      </div>
     </section>
 
     <!--My skills section-->
     <section class="skills para">
-        <div class="text hidden">My Skills in tech</div>
-        <div class="container">
-            <div class="contain cons">
-                <div class="shadow"></div>
-                <div class="texxt">
-                    <h2>HTML</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae tempora nesciunt optio temporibus quos. Facilis iste reprehenderit, obcaecati autem, architecto molestiae earum accusantium, et officia deleniti eius dignissimos possimus asperiores!</p>
-                </div>
-            </div>
-            <div class="contain cons">
-                <div class="shadow"></div>
-                <div class="texxt">
-                    <h2>CSS</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae tempora nesciunt optio temporibus quos. Facilis iste reprehenderit, obcaecati autem, architecto molestiae earum accusantium, et officia deleniti eius dignissimos possimus asperiores!</p>
-                </div>
-            </div>
-            <div class="contain cons">
-                <div class="shadow"></div>
-                <div class="texxt">
-                    <h2>JavaScript</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae tempora nesciunt optio temporibus quos. Facilis iste reprehenderit, obcaecati autem, architecto molestiae earum accusantium, et officia deleniti eius dignissimos possimus asperiores!</p>
-                </div>
-            </div>
+      <div class="text hidden">My Skills in tech</div>
+      <div class="container">
+        <div class="contain cons">
+          <div class="shadow"></div>
+          <div class="texxt">
+            <h2>HTML</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae tempora nesciunt optio temporibus quos. Facilis iste
+              reprehenderit, obcaecati autem, architecto molestiae earum
+              accusantium, et officia deleniti eius dignissimos possimus
+              asperiores!
+            </p>
+          </div>
         </div>
+        <div class="contain cons">
+          <div class="shadow"></div>
+          <div class="texxt">
+            <h2>CSS</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae tempora nesciunt optio temporibus quos. Facilis iste
+              reprehenderit, obcaecati autem, architecto molestiae earum
+              accusantium, et officia deleniti eius dignissimos possimus
+              asperiores!
+            </p>
+          </div>
+        </div>
+        <div class="contain cons">
+          <div class="shadow"></div>
+          <div class="texxt">
+            <h2>JavaScript</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Molestiae tempora nesciunt optio temporibus quos. Facilis iste
+              reprehenderit, obcaecati autem, architecto molestiae earum
+              accusantium, et officia deleniti eius dignissimos possimus
+              asperiores!
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--Random photos section-->
     <section class="random">
-        <div class="photos">
-            <div class="photos-item">
-                <div class="text-wrapper hide">
-                    <h2>Title</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus doloribus qui dicta nobis quia nostrum esse quaerat maiores, reiciendis rerum. Aliquid ullam consequuntur perferendis omnis quae, animi repellendus eius.</p>
-                </div>
-            </div>
-            <div class="photos-item hide">
-                <div class="img-wrapper">
-                    <img src="images/1.jpg" alt="gb" width="100%">
-                </div>
-            </div>
-            <div class="photos-item hide">
-                <div class="img-wrapper">
-                    <img src="images/1.jpg" alt="gb" width="100%">
-                </div>
-                
-            </div>
-            <div class="photos-item">
-                <div class="text-wrapper hide">
-                    <h2>Title</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus doloribus qui dicta nobis quia nostrum esse quaerat maiores, reiciendis rerum. Aliquid ullam consequuntur perferendis omnis quae, animi repellendus eius.</p>
-                </div>
-            </div>
-            <div class="photos-item">
-                <div class="text-wrapper hide">
-                    <h2>Title</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor temporibus doloribus qui dicta nobis quia nostrum esse quaerat maiores, reiciendis rerum. Aliquid ullam consequuntur perferendis omnis quae, animi repellendus eius.</p>
-                </div>
-            </div>
-            <div class="photos-item hide">
-                <div class="img-wrapper">
-                    <img src="images/1.jpg" alt="gb" width="100%">
-                </div>
-                
-            </div>
+      <div class="photos">
+        <div class="photos-item">
+          <div class="text-wrapper hide">
+            <h2>Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              temporibus doloribus qui dicta nobis quia nostrum esse quaerat
+              maiores, reiciendis rerum. Aliquid ullam consequuntur perferendis
+              omnis quae, animi repellendus eius.
+            </p>
+          </div>
         </div>
+        <div class="photos-item hide">
+          <div class="img-wrapper">
+            <img src="images/1.jpg" alt="gb" width="100%" />
+          </div>
+        </div>
+        <div class="photos-item hide">
+          <div class="img-wrapper">
+            <img src="images/1.jpg" alt="gb" width="100%" />
+          </div>
+        </div>
+        <div class="photos-item">
+          <div class="text-wrapper hide">
+            <h2>Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              temporibus doloribus qui dicta nobis quia nostrum esse quaerat
+              maiores, reiciendis rerum. Aliquid ullam consequuntur perferendis
+              omnis quae, animi repellendus eius.
+            </p>
+          </div>
+        </div>
+        <div class="photos-item">
+          <div class="text-wrapper hide">
+            <h2>Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              temporibus doloribus qui dicta nobis quia nostrum esse quaerat
+              maiores, reiciendis rerum. Aliquid ullam consequuntur perferendis
+              omnis quae, animi repellendus eius.
+            </p>
+          </div>
+        </div>
+        <div class="photos-item hide">
+          <div class="img-wrapper">
+            <img src="images/1.jpg" alt="gb" width="100%" />
+          </div>
+        </div>
+      </div>
     </section>
-</body>
-<script src="script.js"></script>
-<script defer src="animate.js"></script>
-<script src="nav.js"></script>
+  </body>
+  <script src="script.js"></script>
+  <script defer src="animate.js"></script>
+  <script src="nav.js"></script>
 </html>
