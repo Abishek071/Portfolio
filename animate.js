@@ -11,7 +11,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const observer_sec = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("appear");
     }
@@ -23,7 +22,6 @@ elements.forEach((el) => observer_sec.observe(el));
 
 const observer_third = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("conso");
     }
@@ -35,7 +33,6 @@ element.forEach((el) => observer_third.observe(el));
 
 const observer_fourth = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
       entry.target.classList.add("glow");
     }
